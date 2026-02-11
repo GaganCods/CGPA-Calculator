@@ -131,6 +131,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 <span className="relative z-10 flex items-center gap-2">
+                  <Home className="w-4 h-4" />
                   Home
                 </span>
                 {location.pathname === '/' && (
@@ -145,6 +146,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 <span className="relative z-10 flex items-center gap-2">
+                  <Calculator className="w-4 h-4" />
                   CGPA Calculator
                 </span>
                 {location.pathname === '/calculator' && (

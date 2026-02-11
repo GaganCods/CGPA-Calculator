@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Github, ExternalLink, Heart, Shield, Instagram, Linkedin } from 'lucide-react';
+import { ExternalLink, Heart, Shield, Instagram, Linkedin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => {
@@ -62,8 +62,9 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="#" 
-                  onClick={(e) => e.preventDefault()}
+                  href="https://github.com/GaganCods/CGPA-Calculator" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-sm text-gray-400 hover:text-namdapha-primary transition-colors flex items-center gap-2 group w-fit"
                 >
                   <span className="w-1 h-1 bg-gray-700 rounded-full group-hover:bg-namdapha-primary transition-colors"></span>
@@ -77,20 +78,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-sm font-semibold text-gray-200 uppercase tracking-wider mb-4">Challenge Context</h4>
              <p className="text-sm text-gray-400 mb-6 leading-relaxed">
-              Built specifically for the <span className="text-gray-200 font-medium">Namdapha Tech Challenge</span>.
+              Built by <span className="text-gray-200 font-medium">Gagan Pratap</span> for the <span className="text-gray-200 font-medium">Namdapha Tech Challenge</span>.
               This tool strictly adheres to IITM BS Degree grading rules.
             </p>
             <div className="flex items-center gap-3">
-                 <a 
-                    href="#" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-lg bg-gray-800/50 hover:bg-gray-800 text-gray-400 hover:text-white transition-all duration-200 ease-out border border-gray-700/50 hover:border-gray-600 hover:scale-105" 
-                    aria-label="GitHub Repository"
-                 >
-                    <Github className="w-4 h-4" />
-                 </a>
-                 
                  <a 
                     href="https://www.linkedin.com/in/gagan-pratap/" 
                     target="_blank"
@@ -120,9 +111,11 @@ const Footer: React.FC = () => {
           <p className="text-xs text-gray-600">
             © {new Date().getFullYear()} CGPA Calculator. All rights reserved.
           </p>
-          <p className="text-xs text-gray-500 flex items-center gap-1.5">
-            Built with <Heart className="w-3 h-3 text-red-500/70 fill-red-500/10 animate-pulse" /> for the IITM BS Community
-          </p>
+          <div className="flex items-center gap-4 flex-col md:flex-row">
+            <p className="text-xs text-gray-500 flex items-center gap-1.5">
+              Built with <Heart className="w-3 h-3 text-red-500/70 fill-red-500/10 animate-pulse" /> by <span className="text-gray-400 font-medium">Gagan Pratap</span>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
